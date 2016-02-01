@@ -6,6 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,84 +63,110 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DBUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/DBUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="443" column="32" selection-start-line="443" selection-start-column="32" selection-end-line="443" selection-end-column="32" />
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1454082144603" expanded="true" signature="1608:1655" placeholder="INSERT INTO ..." />
-                <marker date="1454082144603" expanded="true" signature="2502:2552" placeholder="INSERT INTO ..." />
-                <marker date="1454082144603" expanded="true" signature="3466:3519" placeholder="INSERT INTO ..." />
-                <marker date="1454082144603" expanded="true" signature="4500:4556" placeholder="INSERT INTO ..." />
-                <marker date="1454082144603" expanded="true" signature="5860:5887" placeholder="DROP TABLE I..." />
-                <marker date="1454082144603" expanded="true" signature="5915:6023" placeholder="CREATE TABLE..Table1..." />
-                <marker date="1454082144603" expanded="true" signature="6536:6648" placeholder="CREATE TABLE..$tableName..." />
-                <marker date="1454082144603" expanded="true" signature="7074:7241" placeholder="CREATE TABLE..$tableName..." />
-                <marker date="1454082144603" expanded="true" signature="7721:7910" placeholder="CREATE TABLE..$tableName..." />
-                <marker date="1454082144603" expanded="true" signature="8451:8662" placeholder="CREATE TABLE..$tableName..." />
-                <marker date="1454082144603" expanded="true" signature="11360:11431" placeholder="SELECT COLUM..COLUMNS..." />
-                <marker date="1454082144603" expanded="true" signature="12347:12410" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="12670:12733" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="13493:13556" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="13802:13865" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="14119:14182" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="15097:15160" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="15406:15469" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="15716:15779" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="16033:16096" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="17166:17229" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="17475:17538" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="17785:17848" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="18095:18158" placeholder="ALTER TABLE $tableName..." />
-                <marker date="1454082144603" expanded="true" signature="18412:18475" placeholder="ALTER TABLE $tableName..." />
+                <element signature="imports" expanded="true" />
+                <marker date="1454331496357" expanded="true" signature="1544:1591" placeholder="INSERT INTO ..." />
+                <marker date="1454331496357" expanded="true" signature="2438:2488" placeholder="INSERT INTO ..." />
+                <marker date="1454331496357" expanded="true" signature="3402:3455" placeholder="INSERT INTO ..." />
+                <marker date="1454331496357" expanded="true" signature="4436:4492" placeholder="INSERT INTO ..." />
+                <marker date="1454331496357" expanded="true" signature="5779:5806" placeholder="DROP TABLE I..." />
+                <marker date="1454331496357" expanded="true" signature="5834:5942" placeholder="CREATE TABLE..Table1..." />
+                <marker date="1454331496357" expanded="true" signature="6458:6570" placeholder="CREATE TABLE..$tableName..." />
+                <marker date="1454331496357" expanded="true" signature="6996:7163" placeholder="CREATE TABLE..$tableName..." />
+                <marker date="1454331496357" expanded="true" signature="7643:7832" placeholder="CREATE TABLE..$tableName..." />
+                <marker date="1454331496357" expanded="true" signature="8373:8584" placeholder="CREATE TABLE..$tableName..." />
+                <marker date="1454331496357" expanded="true" signature="11282:11353" placeholder="SELECT COLUM..COLUMNS..." />
+                <marker date="1454331496357" expanded="true" signature="12272:12335" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="12595:12658" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="13418:13481" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="13727:13790" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="14044:14107" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="15022:15085" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="15331:15394" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="15641:15704" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="15958:16021" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="17091:17154" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="17400:17463" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="17710:17773" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="18020:18083" placeholder="ALTER TABLE $tableName..." />
+                <marker date="1454331496357" expanded="true" signature="18337:18400" placeholder="ALTER TABLE $tableName..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="FileCSVParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FileCSVParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/FileCSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="189" column="66" selection-start-line="189" selection-start-column="66" selection-end-line="189" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <file leaf-file-name="testFXproject_jar.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/artifacts/testFXproject_jar.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.654054">
-              <caret line="36" column="104" selection-start-line="36" selection-start-column="104" selection-end-line="36" selection-end-column="104" />
+            <state vertical-scroll-proportion="18.758621">
+              <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34085214">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -172,10 +199,15 @@
         <option value="$PROJECT_DIR$/src/sample/sample2.fxml" />
         <option value="$PROJECT_DIR$/src/sample/DataBaseConnector.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/DBUtils.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/FileCSVParser.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/DBUtils.java" />
+        <option value="$PROJECT_DIR$/src/sample/FileCSVParser.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/DBUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -189,6 +221,39 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="testFXproject" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="testFXproject" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="NamedScopeManager">
     <order />
@@ -228,33 +293,35 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testFXproject" />
+              <option name="myItemId" value="CSVParser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testFXproject" />
+              <option name="myItemId" value="CSVParser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testFXproject" />
+              <option name="myItemId" value="CSVParser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testFXproject" />
+              <option name="myItemId" value="CSVParser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testFXproject" />
+              <option name="myItemId" value="CSVParser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -262,13 +329,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSVParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSVParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,14 +374,21 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.37-bin.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.47748592" />
+    <property name="settings.editor.selected.configurable" value="android.dex.compiler" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\test_cat\testFXproject\src\sample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java_CSVParser_git\CSVParser\src\main\resources" />
+      <recent name="D:\Java_CSVParser_git\CSVParser\src\main\java\sample" />
+      <recent name="D:\Java_CSVParser_git\CSVParser\src\main\java\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -488,6 +586,28 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -588,11 +708,13 @@
       <workItem from="1453994657557" duration="1065000" />
       <workItem from="1454061534441" duration="22357000" />
       <workItem from="1454310751155" duration="6778000" />
+      <workItem from="1454318302007" duration="1366000" />
+      <workItem from="1454323726756" duration="8119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38625000" />
+    <option name="totallyTimeSpent" value="48110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -604,7 +726,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14055637" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -640,52 +762,190 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="303" column="71" selection-start-line="303" selection-start-column="71" selection-end-line="303" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1454331496357" expanded="true" signature="1544:1591" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="2438:2488" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="3402:3455" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="4436:4492" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="5779:5806" placeholder="DROP TABLE I..." />
+            <marker date="1454331496357" expanded="true" signature="5834:5942" placeholder="CREATE TABLE..Table1..." />
+            <marker date="1454331496357" expanded="true" signature="6458:6570" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="6996:7163" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="7643:7832" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="8373:8584" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="11282:11353" placeholder="SELECT COLUM..COLUMNS..." />
+            <marker date="1454331496357" expanded="true" signature="12272:12335" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="12595:12658" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13418:13481" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13727:13790" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="14044:14107" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15022:15085" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15331:15394" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15641:15704" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15958:16021" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17091:17154" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17400:17463" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17710:17773" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18020:18083" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18337:18400" placeholder="ALTER TABLE $tableName..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DBUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/FileCSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="443" column="32" selection-start-line="443" selection-start-column="32" selection-end-line="443" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1454082144603" expanded="true" signature="1608:1655" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="2502:2552" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="3466:3519" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="4500:4556" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="5860:5887" placeholder="DROP TABLE I..." />
-            <marker date="1454082144603" expanded="true" signature="5915:6023" placeholder="CREATE TABLE..Table1..." />
-            <marker date="1454082144603" expanded="true" signature="6536:6648" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="7074:7241" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="7721:7910" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="8451:8662" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="11360:11431" placeholder="SELECT COLUM..COLUMNS..." />
-            <marker date="1454082144603" expanded="true" signature="12347:12410" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="12670:12733" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="13493:13556" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="13802:13865" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="14119:14182" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="15097:15160" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="15406:15469" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="15716:15779" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="16033:16096" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="17166:17229" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="17475:17538" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="17785:17848" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="18095:18158" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="18412:18475" placeholder="ALTER TABLE $tableName..." />
+            <element signature="imports" expanded="true" />
+            <marker date="1454331496357" expanded="true" signature="1544:1591" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="2438:2488" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="3402:3455" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="4436:4492" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="5779:5806" placeholder="DROP TABLE I..." />
+            <marker date="1454331496357" expanded="true" signature="5834:5942" placeholder="CREATE TABLE..Table1..." />
+            <marker date="1454331496357" expanded="true" signature="6458:6570" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="6996:7163" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="7643:7832" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="8373:8584" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="11282:11353" placeholder="SELECT COLUM..COLUMNS..." />
+            <marker date="1454331496357" expanded="true" signature="12272:12335" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="12595:12658" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13418:13481" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13727:13790" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="14044:14107" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15022:15085" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15331:15394" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15641:15704" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15958:16021" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17091:17154" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17400:17463" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17710:17773" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18020:18083" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18337:18400" placeholder="ALTER TABLE $tableName..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FileCSVParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/FileCSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="189" column="66" selection-start-line="189" selection-start-column="66" selection-end-line="189" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="443" column="32" selection-start-line="443" selection-start-column="32" selection-end-line="443" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1454331496357" expanded="true" signature="1544:1591" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="2438:2488" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="3402:3455" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="4436:4492" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="5779:5806" placeholder="DROP TABLE I..." />
+            <marker date="1454331496357" expanded="true" signature="5834:5942" placeholder="CREATE TABLE..Table1..." />
+            <marker date="1454331496357" expanded="true" signature="6458:6570" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="6996:7163" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="7643:7832" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="8373:8584" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="11282:11353" placeholder="SELECT COLUM..COLUMNS..." />
+            <marker date="1454331496357" expanded="true" signature="12272:12335" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="12595:12658" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13418:13481" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13727:13790" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="14044:14107" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15022:15085" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15331:15394" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15641:15704" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15958:16021" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17091:17154" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17400:17463" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17710:17773" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18020:18083" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18337:18400" placeholder="ALTER TABLE $tableName..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/FileCSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
@@ -693,17 +953,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -714,27 +972,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -745,27 +999,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -776,27 +1026,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -807,27 +1053,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -838,76 +1080,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FileCSVParser.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="3096" column="0" selection-start-line="3096" selection-start-column="0" selection-end-line="3096" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DBUtils.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="443" column="32" selection-start-line="443" selection-start-column="32" selection-end-line="443" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1454082144603" expanded="true" signature="1608:1655" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="2502:2552" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="3466:3519" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="4500:4556" placeholder="INSERT INTO ..." />
-            <marker date="1454082144603" expanded="true" signature="5860:5887" placeholder="DROP TABLE I..." />
-            <marker date="1454082144603" expanded="true" signature="5915:6023" placeholder="CREATE TABLE..Table1..." />
-            <marker date="1454082144603" expanded="true" signature="6536:6648" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="7074:7241" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="7721:7910" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="8451:8662" placeholder="CREATE TABLE..$tableName..." />
-            <marker date="1454082144603" expanded="true" signature="11360:11431" placeholder="SELECT COLUM..COLUMNS..." />
-            <marker date="1454082144603" expanded="true" signature="12347:12410" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="12670:12733" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="13493:13556" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="13802:13865" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="14119:14182" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="15097:15160" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="15406:15469" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="15716:15779" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="16033:16096" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="17166:17229" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="17475:17538" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="17785:17848" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="18095:18158" placeholder="ALTER TABLE $tableName..." />
-            <marker date="1454082144603" expanded="true" signature="18412:18475" placeholder="ALTER TABLE $tableName..." />
-          </folding>
+        <state vertical-scroll-proportion="6.2130327">
+          <caret line="862" column="34" selection-start-line="862" selection-start-column="34" selection-end-line="862" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/testFXproject_jar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1454331496357" expanded="true" signature="1544:1591" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="2438:2488" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="3402:3455" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="4436:4492" placeholder="INSERT INTO ..." />
+            <marker date="1454331496357" expanded="true" signature="5779:5806" placeholder="DROP TABLE I..." />
+            <marker date="1454331496357" expanded="true" signature="5834:5942" placeholder="CREATE TABLE..Table1..." />
+            <marker date="1454331496357" expanded="true" signature="6458:6570" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="6996:7163" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="7643:7832" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="8373:8584" placeholder="CREATE TABLE..$tableName..." />
+            <marker date="1454331496357" expanded="true" signature="11282:11353" placeholder="SELECT COLUM..COLUMNS..." />
+            <marker date="1454331496357" expanded="true" signature="12272:12335" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="12595:12658" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13418:13481" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="13727:13790" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="14044:14107" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15022:15085" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15331:15394" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15641:15704" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="15958:16021" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17091:17154" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17400:17463" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="17710:17773" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18020:18083" placeholder="ALTER TABLE $tableName..." />
+            <marker date="1454331496357" expanded="true" signature="18337:18400" placeholder="ALTER TABLE $tableName..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/FileCSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="189" column="66" selection-start-line="189" selection-start-column="66" selection-end-line="189" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.654054">
-          <caret line="36" column="104" selection-start-line="36" selection-start-column="104" selection-end-line="36" selection-end-column="104" />
+        <state vertical-scroll-proportion="18.758621">
+          <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34085214">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -918,10 +1196,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>testFXproject:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.47748592" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -933,7 +1213,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.47748592" />
               </list>
             </option>
           </splitter-proportions>
@@ -952,11 +1232,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.47748592" />
               </list>
             </option>
           </splitter-proportions>
@@ -977,7 +1257,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql-connector-java-5.1.37-bin</last-edited>
+          <last-edited>Maven: mysql:mysql-connector-java:5.1.37</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
