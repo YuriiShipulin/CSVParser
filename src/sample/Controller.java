@@ -51,6 +51,7 @@ public class Controller {
 
     @FXML
     private void initialize() {
+        DBUtils.initDB();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information");
         alert.setHeaderText("");
@@ -82,8 +83,12 @@ public class Controller {
         Stage stage = new Stage();
         FileChooser fileChooser = new FileChooser();
         file = fileChooser.showOpenDialog(stage);
-        url.setText(file.getAbsolutePath());
-        success.showAndWait();
+        if (file != null) {
+            url.setText(file.getAbsolutePath());
+            success.showAndWait();
+        }
+        else
+            url.setText("null");
     }
 
     public void gotTableName() {
@@ -95,7 +100,7 @@ public class Controller {
         tableName = tblName.getText();
         if (!tableName.equals("") && !tableName.isEmpty()) {
             if (DBUtils.getAllTables().contains(tableName)) {
-                data.setText(FileCSVParser.parse(file).replace(",", "\r\n").replace(";", "\r\n"));
+                data.setText(FileCSVParser.parse(file).replace(",", "\r\n"));
 
                 int result = FileCSVParser.checkFile(tableName, FileCSVParser.parse(file));
                 if (result == 1) {
@@ -163,7 +168,7 @@ public class Controller {
         if (!data.equals("No data")) {
             if (tableName != null) {
                 if (!DBUtils.getAllTables().contains(tableName)) {
-                    DBUtils.createDB(tableName, data);
+                    DBUtils.createTable(tableName, data);
                     success.setHeaderText("Table was created successfully");
                     success.setContentText("Table [" + tableName + "] was created");
                     success.showAndWait();
@@ -200,7 +205,7 @@ public class Controller {
 
         String data = FileCSVParser.parse(file);
         StringBuilder sb = new StringBuilder();
-        String[] newHeaders = cols.getText().split(",");
+        String[] newHeaders = cols.getText().split("\r\n");
 
         if (!data.equals("No data")) {
             if (newHeaders.length <= 5 || newHeaders.length >= 2) {
@@ -220,7 +225,7 @@ public class Controller {
                 }
             } else {
                 success.setHeaderText("");
-                success.setContentText("Enter new column headers in [Headers & Columns] with [,] delimiter, then press [Change]");
+                success.setContentText("Enter new column headers in [Headers & Columns] in one column, then press [Change]");
                 success.showAndWait();
             }
         } else {

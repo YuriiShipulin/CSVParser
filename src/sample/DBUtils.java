@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class DBUtils {
     /**
      * Метод получения объекта типа Connection для работы с базой данных;
-     * необходимо указать валидные данные бля подключения.
+     * необходимо указать валидные данные для подключения.
      */
     private static Connection getConnection() {
         final String URL = "jdbc:mysql://localhost:3306/parsecsv";
@@ -32,7 +32,7 @@ public class DBUtils {
     protected static int insert(String tableName, String data) {
         Connection conn = getConnection();
         //разбиваем текст на строки
-        List<String> arr = Arrays.asList(data.split(";"));
+        List<String> arr = Arrays.asList(data.split("\r\n"));
         String[] headersList = getHeaders(data);
 
         StringBuilder sb = new StringBuilder();
@@ -136,7 +136,7 @@ public class DBUtils {
     }
 
     /**
-     * Метод инициализации таблиц, удаляет созданнуе ранее и инициализирует
+     * Метод инициализации таблиц таблицы для тестирования
      */
     protected static void initDB() {
 
@@ -154,7 +154,7 @@ public class DBUtils {
     /**
      * Метод, создающий новую таблицу в случае неоходимости
      */
-    protected static void createDB(String tableName, String data) {
+    protected static void createTable(String tableName, String data) {
         String[] headers = getHeaders(data);
 
         try {
@@ -295,7 +295,7 @@ public class DBUtils {
      * Метод, возвращающий список колонок в файле
      */
     protected static String[] getHeaders(String data) {
-        return data.split(";")[0].split(",");
+        return data.split("\r\n")[0].split(",");
     }
 
     /**

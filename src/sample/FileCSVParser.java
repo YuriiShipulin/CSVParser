@@ -17,7 +17,7 @@ public class FileCSVParser {
                 StringBuilder sb = new StringBuilder();
                 while (scn.hasNext()) {
                     String text = scn.nextLine();
-                    sb.append(text);
+                    sb.append(text).append("\r\n");
                 }
                 result = sb.toString();
             } else {
