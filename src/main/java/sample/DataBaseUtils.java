@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class DBUtils {
+public class DataBaseUtils {
     /**
      * Метод получения объекта типа Connection для работы с базой данных;
      * необходимо указать валидные данные для подключения.
@@ -24,9 +24,10 @@ public class DBUtils {
     }
 
     /**
-     * Метод, построчно добавляющий полученную строку в базу данных
+     * Метод, построчно добавляющий полученную строку в базу данных;
+     * возвращает true в случае успешного добавления содержимого файла в таблицу.
      */
-    protected static int insert(String tableName, String data) {
+    protected static boolean insert(String tableName, String data) {
         Connection conn = getConnection();
         //разбиваем текст на строки
         List<String> arr = Arrays.asList(data.split("\r\n"));
@@ -61,7 +62,7 @@ public class DBUtils {
                         ps.close();
                     } catch (SQLException e) {
                         e.printStackTrace();
-                        return -1;
+                        return false;
                     }
                 }
                 break;
@@ -81,7 +82,7 @@ public class DBUtils {
                         ps.close();
                     } catch (SQLException e) {
                         e.printStackTrace();
-                        return -1;
+                        return false;
                     }
                 }
                 break;
@@ -102,7 +103,7 @@ public class DBUtils {
                         ps.close();
                     } catch (SQLException e) {
                         e.printStackTrace();
-                        return -1;
+                        return false;
                     }
                 }
                 break;
@@ -124,12 +125,12 @@ public class DBUtils {
                         ps.close();
                     } catch (SQLException e) {
                         e.printStackTrace();
-                        return -1;
+                        return false;
                     }
                 }
                 break;
         }
-        return 1;
+        return true;
     }
 
     /**
@@ -149,7 +150,7 @@ public class DBUtils {
     }
 
     /**
-     * Метод, создающий новую таблицу в случае неоходимости
+     * Метод, создающий новую таблицу на основе выбранного файла;
      */
     protected static void createTable(String tableName, String data) {
         String[] headers = getHeaders(data);
@@ -300,7 +301,7 @@ public class DBUtils {
      */
     protected static void changeHeaders(String tableName, String[] newHeaders) {
         Connection conn = getConnection();
-        String[] columns = DBUtils.getColumns(tableName);
+        String[] columns = DataBaseUtils.getColumns(tableName);
         switch (newHeaders.length) {
             case 2:
                 String query = "ALTER TABLE $tableName CHANGE $col1 $newHeaderName1 VARCHAR(20)";

@@ -51,12 +51,12 @@ public class Controller {
 
     @FXML
     private void initialize() {
-        DBUtils.initDB();
+        DataBaseUtils.initDB();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information");
         alert.setHeaderText("");
         alert.setContentText("Please browse .txt/.xls/.csv file and select the table");
-        tables.setText(DBUtils.getAllTables());
+        tables.setText(DataBaseUtils.getAllTables());
         alert.showAndWait();
     }
 
@@ -66,7 +66,7 @@ public class Controller {
         success.setTitle("Information");
         success.setHeaderText("");
         success.setContentText("Refreshed \r\nPlease browse the file and select the table");
-        tables.setText(DBUtils.getAllTables());
+        tables.setText(DataBaseUtils.getAllTables());
         url.setText("");
         tblName.setText("");
         cols.setText("");
@@ -76,19 +76,26 @@ public class Controller {
 
     @FXML
     public void browseFile() throws IOException, URISyntaxException {
-        Alert success = new Alert(Alert.AlertType.INFORMATION);
-        success.setTitle("Information");
-        success.setHeaderText("");
-        success.setContentText("File was selected. Now insert the table name for data saving");
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information");
+        alert.setHeaderText("");
+        alert.setContentText("File was selected. Now insert the table name for data saving");
+
         Stage stage = new Stage();
         FileChooser fileChooser = new FileChooser();
         file = fileChooser.showOpenDialog(stage);
-        if (file != null) {
+        if (file != null && !FileCSVParser.parse(file).equals("")) {
             url.setText(file.getAbsolutePath());
-            success.showAndWait();
+            data.setText(FileCSVParser.parse(file));
+            alert.showAndWait();
         }
-        else
-            url.setText("null");
+        else {
+            data.setText("No data");
+            alert.setAlertType(Alert.AlertType.WARNING);
+            alert.setContentText("File is empty or it has unsupported format");
+            alert.showAndWait();
+        }
     }
 
     public void gotTableName() {
@@ -99,13 +106,12 @@ public class Controller {
 
         tableName = tblName.getText();
         if (!tableName.equals("") && !tableName.isEmpty()) {
-            if (DBUtils.getAllTables().contains(tableName)) {
-                data.setText(FileCSVParser.parse(file).replace(",", "\r\n"));
+            if (DataBaseUtils.getAllTables().contains(tableName)) {
 
-                int result = FileCSVParser.checkFile(tableName, FileCSVParser.parse(file));
-                if (result == 1) {
+                boolean result = FileCSVParser.checkFileAndTable(tableName, FileCSVParser.parse(file));
+                if (result) {
                     StringBuilder sb = new StringBuilder();
-                    for (String s : DBUtils.getHeadersAndColumns(tableName, FileCSVParser.parse(file))) {
+                    for (String s : DataBaseUtils.getHeadersAndColumns(tableName, FileCSVParser.parse(file))) {
                         sb.append(s).append("\r\n");
                     }
                     cols.setText(sb.toString());
@@ -113,19 +119,15 @@ public class Controller {
                 } else {
                     StringBuilder sb = new StringBuilder();
                     sb.append("Headers:").append("\r\n");
-                    for (String s : DBUtils.getHeaders(FileCSVParser.parse(file))) {
+                    for (String s : DataBaseUtils.getHeaders(FileCSVParser.parse(file))) {
                         sb.append(s).append("\r\n");
                     }
                     sb.append("Columns:").append("\r\n");
-                    for (int i = 1; i < DBUtils.getColumns(tableName).length; i++) {
-                        sb.append(DBUtils.getColumns(tableName)[i]).append("\r\n");
+                    for (int i = 1; i < DataBaseUtils.getColumns(tableName).length; i++) {
+                        sb.append(DataBaseUtils.getColumns(tableName)[i]).append("\r\n");
                     }
                     cols.setText("File and table do not match \r\n" + sb.toString());
                 }
-            } else {
-                alert.setHeaderText("Not valid table name");
-                alert.setContentText("Please enter the table name from the list of tables or create new table");
-                alert.showAndWait();
             }
         } else {
             alert.setHeaderText("Not valid table name");
@@ -141,7 +143,7 @@ public class Controller {
         success.setTitle("Success!");
         if (checked) {
             String data = FileCSVParser.parse(file);
-            if (DBUtils.insert(tableName, data) == 1) {
+            if (DataBaseUtils.insert(tableName, data)) {
                 success.setHeaderText("File was inserted successfully");
                 success.setContentText("File [" + file.getAbsolutePath() + "] was inserted to table [" + tableName + "]");
                 success.showAndWait();
@@ -167,14 +169,14 @@ public class Controller {
         String data = FileCSVParser.parse(file);
         if (!data.equals("No data")) {
             if (tableName != null) {
-                if (!DBUtils.getAllTables().contains(tableName)) {
-                    DBUtils.createTable(tableName, data);
+                if (!DataBaseUtils.getAllTables().contains(tableName)) {
+                    DataBaseUtils.createTable(tableName, data);
                     success.setHeaderText("Table was created successfully");
                     success.setContentText("Table [" + tableName + "] was created");
                     success.showAndWait();
-                    tables.setText(DBUtils.getAllTables());
+                    tables.setText(DataBaseUtils.getAllTables());
                     this.data.setText(FileCSVParser.parse(file).replace(",", "\r\n").replace(";", "\r\n"));
-                    for (String s : DBUtils.getHeadersAndColumns(tableName, FileCSVParser.parse(file))) {
+                    for (String s : DataBaseUtils.getHeadersAndColumns(tableName, FileCSVParser.parse(file))) {
                         sb.append(s).append("\r\n");
                     }
                     cols.setText(sb.toString());
@@ -188,7 +190,6 @@ public class Controller {
                 alert.setHeaderText("Warning");
                 alert.setContentText("Please, insert unique table name and press [ENTER]");
                 alert.showAndWait();
-
             }
         } else {
             alert.setHeaderText("Warning");
@@ -209,9 +210,9 @@ public class Controller {
 
         if (!data.equals("No data")) {
             if (newHeaders.length <= 5 || newHeaders.length >= 2) {
-                if (newHeaders.length == DBUtils.getHeaders(data).length) {
-                    DBUtils.changeHeaders(tableName, newHeaders);
-                    for (String s : DBUtils.getHeadersAndColumns(tableName, FileCSVParser.parse(file))) {
+                if (newHeaders.length == DataBaseUtils.getHeaders(data).length) {
+                    DataBaseUtils.changeHeaders(tableName, newHeaders);
+                    for (String s : DataBaseUtils.getHeadersAndColumns(tableName, FileCSVParser.parse(file))) {
                         sb.append(s).append("\r\n");
                     }
                     cols.setText(sb.toString());

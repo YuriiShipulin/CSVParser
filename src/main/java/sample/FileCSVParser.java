@@ -7,22 +7,21 @@ import java.util.Scanner;
 public class FileCSVParser {
 
     /**
-     * Метод, преобразующий содержимое файла в строку
+     * Метод, возвращающий строку с содержимым файла,
+     * либо пустую строку в случае неверного формата либо пустого файла.
      */
     public static String parse(File file) {
         String result = "";
         try {
-            if (file != null) {
-                Scanner scn = new Scanner(file);
+            Scanner scn = new Scanner(file);
+            if (file.exists() && scn.hasNext()) {
                 StringBuilder sb = new StringBuilder();
-                while (scn.hasNext()) {
-                    String text = scn.nextLine();
-                    sb.append(text).append("\r\n");
-                }
-                result = sb.toString();
-            } else {
-                return "No data";
-            }
+                    while (scn.hasNext()) {
+                        String text = scn.nextLine();
+                        sb.append(text).append("\r\n");
+                    }
+                    result = sb.toString();
+                } else return result;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -30,21 +29,21 @@ public class FileCSVParser {
     }
 
     /**
-     * Метод проверяет файл на совместимость с выбранной таблицей, возвращает "1" в случае
+     * Метод проверяет файл на совместимость с выбранной таблицей, возвращает true в случае
      * успешной проверки
-     * "-1" - несовпадение названий колонок в файле и таблице
+     * false - несовпадение названий колонок в файле и таблице
      */
-    public static int checkFile(String tableName, String data) {
-        String[] headers = DBUtils.getHeaders(data);
-        int result = 0;
+    public static boolean checkFileAndTable(String tableName, String data) {
+        String[] headers = DataBaseUtils.getHeaders(data);
+        boolean result = false;
 
         for (int i = 0; i < headers.length; i++) {
-            String[] columns = DBUtils.getColumns(tableName);
+            String[] columns = DataBaseUtils.getColumns(tableName);
             if ((columns.length - 1) == headers.length) {
                 if (columns[i + 1].equals(headers[i]))
-                    result = 1;
+                    result = true;
                 else
-                    result = -1;
+                    result = false;
 
             } else return result;
         }
